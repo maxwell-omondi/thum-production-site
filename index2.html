@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THUM Production</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f1eb;
+      color: #1a1a1a;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?music,concert') center center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .section-title {
+      margin: 60px 0 30px;
+      text-align: center;
+      color: #3e2f1c;
+      font-weight: bold;
+    }
+    .card {
+      background-color: #e9e2d0;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease-in-out;
+    }
+    .card-title {
+      color: #5c4432;
+      font-weight: 600;
+    }
+    .btn-dark {
+      background-color: #3e2f1c;
+      border-color: #3e2f1c;
+    }
+    .btn-dark:hover {
+      background-color: #2c1f13;
+      border-color: #2c1f13;
+    }
+    .navbar {
+      background-color: #3e2f1c !important;
+    }
+    .footer {
+      background-color: #3e2f1c;
+      color: #fff;
+    }
+    .form-control {
+      border-radius: 0;
+    }
+    .btn-primary {
+      background-color: #5c4432;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #3e2f1c;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">THUM Production</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#media">Performances</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="hero text-center">
+    <div>
+      <h1>Welcome to THUM Production</h1>
+      <p>Crafting Sound. Empowering Artists. Elevating Experiences.</p>
+    </div>
+  </header>
+  <section id="about" class="container">
+    <h2 class="section-title">Who We Are</h2>
+    <p class="text-center">
+      Based in Mombasa, THUM Production is a professional music production and artist development company. With over 5 years of experience, we specialize in producing world-class sound, nurturing artists, and elevating live music events across Kenya.
+    </p>
+  </section>
+  <section id="services" class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Studio Recording</h5>
+          <p>Professional audio production, mixing, and mastering tailored for musicians and brands.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Artist Development</h5>
+          <p>Mentorship, coaching, and branding support to help artists grow and thrive.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Live Shows</h5>
+          <p>Performance booking, sound support, and stage management for unforgettable events.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Podcast &amp; Voiceovers</h5>
+          <p>High-quality production for digital content, radio, and documentaries.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Commercial Audio</h5>
+          <p>Custom sound branding for companies, including jingles and sonic logos.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Music Workshops</h5>
+          <p>Empowering the community through open mics, skill development, and music education.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="media" class="container">
+    <h2 class="section-title">Our Performances</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <iframe class="youtube-embed" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6 mb-4">
+        <iframe class="youtube-embed" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <section id="shop" class="container">
+    <h2 class="section-title">Shop Beats &amp; Merchandise</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?tshirt,clothes" class="card-img-top" alt="T-shirt">
+          <div class="card-body">
+            <h5 class="card-title">Cotton T-Shirt (Logo)</h5>
+            <p class="card-text">KES 1,500</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?linen,shirt" class="card-img-top" alt="Linen Shirt">
+          <div class="card-body">
+            <h5 class="card-title">Linen Shirt (Branded)</h5>
+            <p class="card-text">KES 2,500</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?music,beats" class="card-img-top" alt="Beats">
+          <div class="card-body">
+            <h5 class="card-title">Exclusive Beat Pack</h5>
+            <p class="card-text">KES 3,000</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="container mb-5">
+    <h2 class="section-title">Get In Touch</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="col">
+          <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+      </div>
+      <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+  <footer class="footer text-white text-center p-3">
+    &copy; 2025 THUM Production | Made with passion in Mombasa
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
