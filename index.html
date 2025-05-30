@@ -1,234 +1,207 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1671.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THUM Production</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f1eb;
+      color: #1a1a1a;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?music,concert') center center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .section-title {
+      margin: 60px 0 30px;
+      text-align: center;
+      color: #3e2f1c;
+      font-weight: bold;
+    }
+    .card {
+      background-color: #e9e2d0;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease-in-out;
+    }
+    .card-title {
+      color: #5c4432;
+      font-weight: 600;
+    }
+    .btn-dark {
+      background-color: #3e2f1c;
+      border-color: #3e2f1c;
+    }
+    .btn-dark:hover {
+      background-color: #2c1f13;
+      border-color: #2c1f13;
+    }
+    .navbar {
+      background-color: #3e2f1c !important;
+    }
+    .footer {
+      background-color: #3e2f1c;
+      color: #fff;
+    }
+    .form-control {
+      border-radius: 0;
+    }
+    .btn-primary {
+      background-color: #5c4432;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #3e2f1c;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;THUM Production&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #f5f1eb;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #1a1a1a;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: url('https://source.unsplash.com/1600x600/?music,concert') center center/cover no-repeat;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 90vh;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-shadow: 2px 2px 4px #000;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.section-title {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 60px 0 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #3e2f1c;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #e9e2d0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.03);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.3s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card-title {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #5c4432;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn-dark {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #3e2f1c;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-color: #3e2f1c;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn-dark:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #2c1f13;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-color: #2c1f13;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.navbar {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #3e2f1c !important;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #3e2f1c;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.form-control {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn-primary {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #5c4432;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn-primary:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #3e2f1c;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav class="navbar navbar-expand-lg navbar-dark fixed-top"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container-fluid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="navbar-brand" href="#"&gt;THUM Production&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="collapse navbar-collapse" id="navbarNav"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="navbar-nav ms-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#media"&gt;Performances&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#shop"&gt;Shop&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="hero text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;Welcome to THUM Production&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Crafting Sound. Empowering Artists. Elevating Experiences.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="about" class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Who We Are&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Based in Mombasa, THUM Production is a professional music production and artist development company. With over 5 years of experience, we specialize in producing world-class sound, nurturing artists, and elevating live music events across Kenya.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="services" class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Our Services&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="row"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card p-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="card-title"&gt;Studio Recording&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Professional audio production, mixing, and mastering tailored for musicians and brands.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card p-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="card-title"&gt;Artist Development&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Mentorship, coaching, and branding support to help artists grow and thrive.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card p-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="card-title"&gt;Live Shows&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Performance booking, sound support, and stage management for unforgettable events.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card p-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="card-title"&gt;Podcast &amp; Voiceovers&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;High-quality production for digital content, radio, and documentaries.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card p-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="card-title"&gt;Commercial Audio&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Custom sound branding for companies, including jingles and sonic logos.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card p-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h5 class="card-title"&gt;Music Workshops&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Empowering the community through open mics, skill development, and music education.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="media" class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Our Performances&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="row"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-6 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;iframe class="youtube-embed" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-6 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;iframe class="youtube-embed" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="shop" class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Shop Beats &amp; Merchandise&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="row"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://source.unsplash.com/400x300/?tshirt,clothes" class="card-img-top" alt="T-shirt"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card-body"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h5 class="card-title"&gt;Cotton T-Shirt (Logo)&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="card-text"&gt;KES 1,500&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#" class="btn btn-dark"&gt;Buy Now&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://source.unsplash.com/400x300/?linen,shirt" class="card-img-top" alt="Linen Shirt"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card-body"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h5 class="card-title"&gt;Linen Shirt (Branded)&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="card-text"&gt;KES 2,500&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#" class="btn btn-dark"&gt;Buy Now&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="col-md-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://source.unsplash.com/400x300/?music,beats" class="card-img-top" alt="Beats"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card-body"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h5 class="card-title"&gt;Exclusive Beat Pack&lt;/h5&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="card-text"&gt;KES 3,000&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#" class="btn btn-dark"&gt;Buy Now&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="contact" class="container mb-5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Get In Touch&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="row mb-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="col"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;input type="text" class="form-control" placeholder="Your Name"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="col"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;input type="email" class="form-control" placeholder="Your Email"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;textarea class="form-control mb-3" rows="4" placeholder="Your Message"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button type="submit" class="btn btn-primary"&gt;Send Message&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="footer text-white text-center p-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&amp;copy; 2025 THUM Production | Made with passion in Mombasa</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/html&gt;</p>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">THUM Production</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#media">Performances</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="hero text-center">
+    <div>
+      <h1>Welcome to THUM Production</h1>
+      <p>Crafting Sound. Empowering Artists. Elevating Experiences.</p>
+    </div>
+  </header>
+  <section id="about" class="container">
+    <h2 class="section-title">Who We Are</h2>
+    <p class="text-center">
+      Based in Mombasa, THUM Production is a professional music production and artist development company. With over 5 years of experience, we specialize in producing world-class sound, nurturing artists, and elevating live music events across Kenya.
+    </p>
+  </section>
+  <section id="services" class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Studio Recording</h5>
+          <p>Professional audio production, mixing, and mastering tailored for musicians and brands.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Artist Development</h5>
+          <p>Mentorship, coaching, and branding support to help artists grow and thrive.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Live Shows</h5>
+          <p>Performance booking, sound support, and stage management for unforgettable events.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Podcast &amp; Voiceovers</h5>
+          <p>High-quality production for digital content, radio, and documentaries.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Commercial Audio</h5>
+          <p>Custom sound branding for companies, including jingles and sonic logos.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3">
+          <h5 class="card-title">Music Workshops</h5>
+          <p>Empowering the community through open mics, skill development, and music education.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="media" class="container">
+    <h2 class="section-title">Our Performances</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <iframe class="youtube-embed" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6 mb-4">
+        <iframe class="youtube-embed" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <section id="shop" class="container">
+    <h2 class="section-title">Shop Beats &amp; Merchandise</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?tshirt,clothes" class="card-img-top" alt="T-shirt">
+          <div class="card-body">
+            <h5 class="card-title">Cotton T-Shirt (Logo)</h5>
+            <p class="card-text">KES 1,500</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?linen,shirt" class="card-img-top" alt="Linen Shirt">
+          <div class="card-body">
+            <h5 class="card-title">Linen Shirt (Branded)</h5>
+            <p class="card-text">KES 2,500</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?music,beats" class="card-img-top" alt="Beats">
+          <div class="card-body">
+            <h5 class="card-title">Exclusive Beat Pack</h5>
+            <p class="card-text">KES 3,000</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="container mb-5">
+    <h2 class="section-title">Get In Touch</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="col">
+          <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+      </div>
+      <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+  <footer class="footer text-white text-center p-3">
+    &copy; 2025 THUM Production | Made with passion in Mombasa
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
